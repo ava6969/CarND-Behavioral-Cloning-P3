@@ -12,6 +12,8 @@ from PIL import Image
 from flask import Flask
 from io import BytesIO
 
+import torch
+import pymodel
 from keras.models import load_model
 import h5py
 from keras import __version__ as keras_version
@@ -119,8 +121,10 @@ if __name__ == '__main__':
         print('You are using Keras version ', keras_version,
               ', but the model was built using ', model_version)
 
-    model = load_model(args.model)
-
+    # model = load_model(args.model)
+    model = pymodel.Model
+    model.load_state_dict(torch.load(args.model))
+    
     if args.image_folder != '':
         print("Creating image folder at {}".format(args.image_folder))
         if not os.path.exists(args.image_folder):
