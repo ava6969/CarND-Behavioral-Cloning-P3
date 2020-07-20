@@ -19,8 +19,8 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/center.png "Center Driving"
-[image3]: ./examples/processed.png "Recovery Image"
+[image2]: ./examples/center.jpg "Center Driving"
+[image3]: ./examples/processed.jpg "Recovery Image"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
